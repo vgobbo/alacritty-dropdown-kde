@@ -1,6 +1,16 @@
 # Alacritty Dropdown
 Win script that adds drop-down feature to Alacritty.
 
+It provides:
+- Display/hide Alacritty when Meta+F12 is pressed.
+- Make Alacritty window _always on top_ of other windows.
+- Make Alacritty visible in all desktops.
+- Make Alacritty fullscreen.
+
+What it doesn't provide:
+- Start Alacritty.
+- Move Alacritty to multiple displays (it is always displayed in display that it was started from).
+
 *Works only on KDE.*
 
 ## Requirements
