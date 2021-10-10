@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Alacritty Drop-Down
+Comment=Adds drop-down functionallity to Alacritty.
+Icon=preferences-system-windows
+
+X-KDE-PluginInfo-Author=Vinicius Gobbo Antunes de Oliveira
+X-KDE-PluginInfo-Email=vgobbo@gmail.com
+X-KDE-PluginInfo-Name=alacritty-dropdown
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-License=GPL
+
+Type=Service
+X-KDE-ServiceTypes=KWin/Script
+X-Plasma-API=javascript
+X-Plasma-MainScript=code/main.js
