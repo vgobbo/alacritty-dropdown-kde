@@ -1,3 +1,7 @@
+/*
+# vim:tabstop=4:shiftwidth=4:noexpandtab
+*/
+
 function isAlacritty(client) {
 	return client && !client.deleted && client.normalWindow && client.resourceName.toString() === "alacritty";
 }
@@ -76,4 +80,3 @@ function init() {
 
 init();
 
-# vim:tabstop=4:shiftwidth=4:noexpandtab
