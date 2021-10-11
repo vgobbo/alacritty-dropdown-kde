@@ -11,6 +11,10 @@ function isVisible(client) {
 	return !client.minimized;
 }
 
+function isActive(client) {
+	return client === workspace.activeClient;
+}
+
 function activate(client) {
 	workspace.activeClient = client;
 }
@@ -26,17 +30,28 @@ function setupClient(client) {
 	client.fullScreen = true;
 }
 
-function toggleClient(client) {
-	print("toggleClient");
-	client.minimized = !client.minimized;
+function show(client) {
+	print("show");
+	client.minimized = false;
+}
+
+function hide(client) {
+	print("hide");
+	client.minimized = true;
 }
 
 function toggleAlacritty() {
 	print("toggleAlacritty");
 	let alacritty = findAlacritty();
 	if ( alacritty ) {
-		toggleClient(alacritty);
 		if ( isVisible(alacritty) ) {
+			if ( isActive(alacritty) ) {
+				hide(alacritty);
+			} else {
+				activate(alacritty);
+			}
+		} else {
+			show(alacritty);
 			activate(alacritty);
 		}
 	}
@@ -60,3 +75,5 @@ function init() {
 }
 
 init();
+
+# vim:tabstop=4:shiftwidth=4:noexpandtab
