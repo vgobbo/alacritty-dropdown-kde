@@ -32,20 +32,30 @@ function setupClient(client) {
 	client.keepAbove = true;
 	// client.setMaximize(true, true);
 	client.fullScreen = true;
+	printClient(client);
+}
+
+function printClient(client) {
+	print("resourceName=" + client.resourceName.toString() +
+		";normalWindow=" + client.normalWindow +
+		";onAllDesktops=" + client.onAllDesktops +
+		";skipTaskbar=" + client.skipTaskbar +
+		";skipSwitcher=" + client.skipSwitcher +
+		";skipPager=" + client.skipPager +
+		";keepAbove=" + client.keepAbove +
+		";fullScreen=" + client.fullScreen +
+		"");
 }
 
 function show(client) {
-	print("show");
 	client.minimized = false;
 }
 
 function hide(client) {
-	print("hide");
 	client.minimized = true;
 }
 
 function toggleAlacritty() {
-	print("toggleAlacritty");
 	let alacritty = findAlacritty();
 	if ( alacritty ) {
 		if ( isVisible(alacritty) ) {
@@ -62,9 +72,9 @@ function toggleAlacritty() {
 }
 
 function setupAlacritty(client) {
-	print("setupAlacritty");
 	if ( isAlacritty(client) ) {
 		setupClient(client);
+		printClient(client);
 	}
 }
 
