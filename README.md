@@ -57,3 +57,6 @@ Adapt it to Wayland if needed.
 - Make sure Alacritty is installed and running.
 - Make sure the script is installed and enabled.
 - Make sure the _compose key_ is not set to `Meta` on the _System Settings > Input Devices > Keyboard > Advanced > Position of compose key_.
+
+### Window is borderless but not fullscreen
+- Make sure `startup_mode` *is not set* to `Fullscreen` in `.config/alacritty/alacritty.yml`: let the script take care of the window configuration.
