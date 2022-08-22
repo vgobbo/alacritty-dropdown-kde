@@ -28,7 +28,7 @@ git clone git@github.com:vgobbo/alacritty-dropdown-kde.git
 cd alacritty-dropdown-kde
 ```
 
-- Feel free you inspected the code, so nothing weird is being added to your computer ;D
+- Inspect the code, so nothing weird is being added to your computer ;D
 
 - Install:
 ```bash
