@@ -6,7 +6,7 @@ Icon=preferences-system-windows
 X-KDE-PluginInfo-Author=Vinicius Gobbo Antunes de Oliveira
 X-KDE-PluginInfo-Email=vgobbo@gmail.com
 X-KDE-PluginInfo-Name=alacritty-dropdown
-X-KDE-PluginInfo-Version=0.2.1
+X-KDE-PluginInfo-Version=0.2.2
 X-KDE-PluginInfo-License=GPL
 
 Type=Service
