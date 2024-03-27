@@ -3,11 +3,11 @@
 */
 
 function isAlacritty(client) {
-	return client && !client.deleted && client.normalWindow && client.resourceName.toString() === "alacritty";
+	return client && !client.deleted && client.normalWindow && client.resourceName.toString() === "Alacritty";
 }
 
 function findAlacritty() {
-	let clients = workspace.clientList();
+	let clients = workspace.windowList();
 	return clients.find(client => isAlacritty(client)) || null;
 }
 
@@ -16,11 +16,11 @@ function isVisible(client) {
 }
 
 function isActive(client) {
-	return client === workspace.activeClient;
+	return client === workspace.activeWindow;
 }
 
 function activate(client) {
-	workspace.activeClient = client;
+	workspace.activeWindow = client;
 }
 
 function setupClient(client) {
@@ -84,7 +84,7 @@ function init() {
 		setupClient(alacritty);
 	}
 
-	workspace.clientAdded.connect(setupAlacritty);
+	workspace.windowAdded.connect(setupAlacritty);
 	registerShortcut("Alacritty Toggle", "Toggle Alacritty open/closed.", "Meta+F12", toggleAlacritty);
 }
 

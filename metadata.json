@@ -1,0 +1,22 @@
+{
+	"KPlugin": {
+		"Name": "Alacritty Drop-Down",
+		"Description": "Adds drop-down functionallity to Alacritty.",
+		"Icon": "preferences-system-windows",
+
+		"Authors" : [
+			{
+				"Email": "vgobbo@gmail.com",
+				"Name": "Vinicius Gobbo Antunes de Oliveira"
+			}
+		],
+		"Id": "alacritty-dropdown",
+		"Version": "0.2.2",
+		"License": "GPL",
+		"Website": "https://github.com/vgobbo/alacritty-dropdown-kde/tree/main"
+	},
+
+	"X-Plasma-API": "javascript",
+	"X-Plasma-MainScript": "code/main.js",
+	"KPackageStructure": "KWin/Script"
+}
