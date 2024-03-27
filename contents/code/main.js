@@ -3,7 +3,7 @@
 */
 
 function isAlacritty(client) {
-	return client && !client.deleted && client.normalWindow && client.resourceName.toString() === "alacritty";
+	return client && !client.deleted && client.normalWindow && client.resourceName.toString() === "Alacritty";
 }
 
 function findAlacritty() {
