@@ -14,15 +14,20 @@ What it doesn't provide:
 *Works only on KDE.*
 
 ## Requirements
-- KDE Plasma >= 5.22
-- KDE Frameworks >= 5.85
-- Qt >= 5.15
-- Alacritty >= 0.8
+
+From version 0.3 (tag v0.3.0) only KDE 6 is supported. For KDE 5, use version 0.2.2 (tag v0.2.2).
+
+Current requirements:
+- KDE Plasma >= 6.1
+- KDE Frameworks >= 6.5
+- Qt >= 6.7
+- Alacritty >= 0.13
 
 Requirements are based on the version which I am running, so it might work on earlier versions of the afore mentioned components.
 
 ## Installing
-- Clone somewhere and `cd` into:
+
+- Clone somewhere and `cd` into:i
 ```bash
 git clone git@github.com:vgobbo/alacritty-dropdown-kde.git
 cd alacritty-dropdown-kde
@@ -32,17 +37,20 @@ cd alacritty-dropdown-kde
 
 - Install:
 ```bash
-kpackagetool5 --type=KWin/Script -i .
+kpackagetool6 --type=KWin/Script -i .
 ```
 
 If you are upgrading, use:
 ```bash
-kpackagetool5 --type=KWin/Script -u .
+kpackagetool6 --type=KWin/Script -u .
 ```
+
+If you just upgraded to KDE 6 from KDE 5, you might have to manually remove the old plugin and then install it fresh.
 
 - Enable by pressing `Alt+F2`, typing _KWin Scripts_ and selecting _Alacritty Drop-Down_ in the script list.
 
 ## Debugging
+
 The preferred way is through `wm console`, according to KDE documentation. But it didn't work for me, so I relied on `journalctl` for debugging:
 ```bash
 journalctl -f -t kwin_x11
