@@ -11,7 +11,7 @@
 			}
 		],
 		"Id": "alacritty-dropdown",
-		"Version": "0.2.2",
+		"Version": "0.3.0",
 		"License": "GPL",
 		"Website": "https://github.com/vgobbo/alacritty-dropdown-kde/tree/main"
 	},
