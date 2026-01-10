@@ -68,3 +68,17 @@ Adapt it to Wayland if needed.
 
 ### Window is borderless but not fullscreen
 - Make sure `startup_mode` *is not set* to `Fullscreen` in `.config/alacritty/alacritty.yml`: let the script take care of the window configuration.
+
+## Tips and Tricks
+
+- Below settings will allow to start alacritty in background when you start kde and you can press `Meta + F12` to directly show alacritty without having to worry about to start it manually.
+  - Add alacritty to auto start in system settings
+  - Set windows Rules
+        - class exact match - alacritty Alacritty
+        - size (set what ever size you want)
+        - minimized - Yes (apply initially)
+        - initial placement - centered
+        - Ignore Requested Geometry - Yes
+        - skip taskbar - Yes
+        - skip pager - Yes
+        - skip switcher - Yes
